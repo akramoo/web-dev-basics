@@ -5,7 +5,7 @@ introduce beginners to the **fundamentals of web development** (HTML, CSS,
 JavaScript) through a simple demo site and learning resources.
 
 **Author:** Samir Akram OUNIS.
-**Project:** `example_web_demo` — small static demo showing HTML + CSS + JavaScript working together.
+
 
 ---
 
