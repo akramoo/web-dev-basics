@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card — Web Dev Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Basics of Web Development — Demo</h1>
+    <p class="muted">Simple profile card showing HTML, CSS, and JavaScript working together.</p>
+  </header>
+
+  <main class="container" id="main">
+    <section class="card" aria-labelledby="profile-name">
+      <div class="avatar" aria-hidden="true">
+        <!-- simple SVG avatar -->
+        <svg viewBox="0 0 100 100" class="avatar-svg" role="img" aria-label="Avatar">
+          <circle cx="50" cy="30" r="20" />
+          <rect x="20" y="58" width="60" height="26" rx="6" ry="6" />
+        </svg>
+      </div>
+      <div class="card-content">
+        <h2 id="profile-name">Samir Akram OUNIS</h2>
+        <p class="role">Software &amp; AI Engineer</p>
+        <p class="bio">I build small web projects to learn — this is a compact demo of HTML, CSS and JavaScript.</p>
+
+        <div class="actions">
+          <button id="greetBtn" class="btn">Say hello</button>
+          <button id="themeBtn" class="btn secondary">Toggle theme</button>
+        </div>
+
+        <p class="info">Times greeted: <span id="greetCount">0</span></p>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h3>How it works</h3>
+      <ul>
+        <li><strong>HTML</strong> defines structure (this document)</li>
+        <li><strong>CSS</strong> in <code>style.css</code> controls appearance</li>
+        <li><strong>JS</strong> in <code>script.js</code> handles interactivity</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Accessible simple modal for the greeting message -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <h2 id="modalTitle">Hello!</h2>
+      <p id="modalMessage">This is a friendly greeting from JavaScript.</p>
+      <button id="closeModal" class="btn">Close</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <small>Example site — built for a 1-hour basics talk.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
